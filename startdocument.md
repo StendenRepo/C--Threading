@@ -1,4 +1,21 @@
-Opdracht idee:
-Een applicatie waarbij je een kenteken kan invoeren en dan die auto tevoorschijn krijgt door data van de rdw op te halen. Daarna kan je onderdelen bij deze auto zoeken met een andere api.
+# C# threading
 
-Wat ook kan is dat je de auto kan customizen. Bijvoorbeeld een side view laten zien en dan de mogelijkheid hebben om nieuwe velgen te proberen of de auto een andere kleur te geven.
+## Opdrachtomschrijving
+Het idee is om een app te ontwikkelen voor een chiptuningbedrijf, waarbij klanten kunnen zien hoeveel vermogenswinst ze kunnen behalen aan de hand van hun kenteken. De klant voert zijn kenteken in, waarna er een berekening wordt uitgevoerd om te bepalen hoeveel extra vermogen hij of zij kan krijgen. Wanneer de klant tevreden is, kan hij een offerte aanvragen. Deze wordt dan op de achtergrond gegenereerd.
+
+## Requirements
+**Must have** 
+* Ophalen van kenteken gegevens
+* Berekenen van vermogenswinst
+* Genereren offerte
+
+**Should have**
+* user interface
+
+**Could have**
+* vermogenswinst tonen in een grafiek
+* Offerte automatisch naar klant mailen
+
+**Wont have**
+* Auto gegevens ophalen via merk/model/uitvoering
+

@@ -1,4 +1,6 @@
-﻿namespace MainApp;
+﻿using MainApp.Logic;
+
+namespace MainApp;
 
 public partial class MainPage : ContentPage
 {
@@ -10,6 +12,7 @@ public partial class MainPage : ContentPage
 
     private void OnSubmitClicked(object? sender, EventArgs e)
     {
-        throw new NotImplementedException();
+        var service = new ApiService();
+        _ = service.QueryData();
     }
 }

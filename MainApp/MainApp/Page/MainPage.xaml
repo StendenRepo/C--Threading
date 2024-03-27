@@ -18,7 +18,7 @@
 
             <Label Grid.Row="0" Grid.Column="1" Text="Vul hier het kenteken in:" VerticalTextAlignment="Center" FontSize="24"/>
                 <Entry Grid.Row="0" Grid.Column="2" x:Name="cta_subForm" MaxLength="8" BackgroundColor="#f0b504" HorizontalTextAlignment="Center" TextTransform="Uppercase" TextColor="Black" FontSize="22" FontAttributes="Bold"/>
-            <Button Grid.Row="0" Grid.Column="3" Text="controleer" Clicked="OnSubmitClicked" FontSize="14" BackgroundColor="White"/>
+            <Button Grid.Row="0" Grid.Column="3" Text="controleer" Clicked="OnSubmitClicked" FontSize="14"/>
         </Grid>
     </StackLayout>
 

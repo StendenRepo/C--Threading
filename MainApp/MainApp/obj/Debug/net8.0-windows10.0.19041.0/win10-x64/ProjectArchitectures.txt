@@ -1,1 +1,0 @@
-E:\Projects\C--Threading\MainApp\MainApp\MainApp.csproj;x64

@@ -2,6 +2,7 @@ using System.Diagnostics;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using MainApp.Logic;
+using MainApp.Models;
 
 namespace MainApp.ViewModels;
 
@@ -10,7 +11,14 @@ public partial class TuningViewModel : ObservableObject, IQueryAttributable
     [ObservableProperty] private string? _plate;
     [ObservableProperty] private CarData? _carData;
     private readonly IApiService _apiService = new ApiService();
+    private readonly CarSpecsWebScraper _webScraper = new CarSpecsWebScraper();
 
+    [RelayCommand]
+    private void Scrape()
+    {
+        _webScraper.GetCarSpecs();
+    }
+    
     [RelayCommand]
     private async Task Submit(string licensePlate)
     {

@@ -37,7 +37,7 @@
                     </Border>
                 </Grid>
             </Border>
-            <Label HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="1" Text="{Binding Plate}"></Label>
+            <Button Grid.Column="1" Grid.Row="0" Command="{Binding ScrapeCommand}"></Button>
             <Label HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="2" Text="{Binding Plate}"></Label>
         </Grid>
     </ContentPage.Content>

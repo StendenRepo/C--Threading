@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace MainApp.Logic;
+namespace MainApp.Models;
 
 
 [Serializable]
@@ -10,7 +10,7 @@ public class CarData
     public string LicensePlate { get; set; }
     
     [JsonPropertyName("voertuigsoort")]
-    public string VerhicleType { get; set; }
+    public string VehicleType { get; set; }
     
     [JsonPropertyName("merk")]
     public string Make { get; set; }
@@ -26,4 +26,6 @@ public class CarData
     
     [JsonPropertyName("tweede_kleur")]
     public string SecondaryColor { get; set; }
+
+    public string FullName => Make + " " + MakeType;
 }

@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:MainApp.ViewModels"
@@ -14,19 +13,18 @@
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="20" />
                 </Border.StrokeShape>
-                <Grid BackgroundColor="Grey" Padding="20" RowDefinitions="Auto, Auto, *">
-                    <Label Text="Jouw voertuig"></Label>
-                    <Image Grid.Row="1" Height="350" Width="500" Source="https://pictures.vwe.nl/ATL/volkswagen/ATX_M2345_F2.jpg" />
-                    <Border Grid.Row="2" BackgroundColor="Beige">
+                <Grid BackgroundColor="Grey" Padding="20" RowDefinitions="Auto, *">
+                    <Image Grid.Row="0" Height="350" Width="500" Source="https://pictures.vwe.nl/ATL/volkswagen/ATX_M2345_F2.jpg" />
+                    <Border Grid.Row="1" BackgroundColor="Beige">
                         <Border.StrokeShape>
                             <RoundRectangle CornerRadius="20" />
                         </Border.StrokeShape>
-                        <Grid Padding="20" RowDefinitions="*, *, *, *" ColumnDefinitions="Auto, Auto, *, Auto, Auto" ColumnSpacing="10">
-                            <Label Grid.ColumnSpan="2" Text="{Binding CarData.Make}"></Label>
-                            <Label Grid.Row="1" Grid.Column="0" Text="Type"></Label>
-                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding CarData.VehicleType}"></Label>
-                            <Label Grid.Row="2" Grid.Column="0" Text="Bouwjaar"></Label>
-                            <Label Grid.Row="2" Grid.Column="1" Text="{Binding CarData.MakeType}"></Label>
+                        <Grid Padding="20" RowDefinitions="*, *, *, *" ColumnDefinitions="Auto, *, 15, Auto, *" ColumnSpacing="10">
+                            <Label Grid.ColumnSpan="2" Text="{Binding CarData.FullName}"></Label>
+                            <Label Grid.Row="1" Grid.Column="0" Text="Kenteken"></Label>
+                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding CarData.LicensePlate}"></Label>
+                            <Label Grid.Row="2" Grid.Column="0" Text="Type"></Label>
+                            <Label Grid.Row="2" Grid.Column="1" Text="{Binding CarData.VehicleType}"></Label>
                             <Label Grid.Row="3" Grid.Column="0" Text="Vermogen (PK)"></Label>
                             <Label Grid.Row="3" Grid.Column="1" Text="68"></Label>
                             <Label Grid.Row="1" Grid.Column="3" Text="Koppel"></Label>

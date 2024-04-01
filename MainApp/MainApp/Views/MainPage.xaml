@@ -21,11 +21,8 @@
             </Grid.ColumnDefinitions>
 
             <Label Grid.Row="0" Grid.Column="1" Text="Vul hier het kenteken in: " VerticalTextAlignment="Center" FontSize="24"/>
-                <Entry Grid.Row="0" Grid.Column="2" x:Name="cta_subForm" Text="{Binding Plate}" MaxLength="8" BackgroundColor="#f0b504" HorizontalTextAlignment="Center" TextTransform="Uppercase" TextColor="Black" FontSize="22" FontAttributes="Bold"/>
-            <Button Grid.Row="0" Grid.Column="3" Text="Bereken" Command="{Binding SubmitCommand }" FontSize="14" CommandParameter=""/>
+            <Entry Grid.Row="0" Grid.Column="2" x:Name="cta_subForm" Text="{Binding Plate}" MaxLength="8" BackgroundColor="#f0b504" HorizontalTextAlignment="Center" TextTransform="Uppercase" TextColor="Black" FontSize="22" FontAttributes="Bold"/>
+            <Button Grid.Row="0" Grid.Column="3" Text="Bereken" Command="{Binding SubmitCommand }" FontSize="14" CommandParameter="{Binding Source={x:Reference cta_subForm}, Path=Text}"/>
         </Grid>
     </StackLayout>
-
-
-
 </ContentPage>

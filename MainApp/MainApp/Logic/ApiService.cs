@@ -3,7 +3,7 @@ using System.Text.Json;
 
 namespace MainApp.Logic;
 
-public class ApiService
+public class ApiService : IApiService
 {
     private readonly HttpClient _client = new();
     private const string AppToken = "Fyr47PwDKOX44RykT02Tc0Fky";
@@ -16,12 +16,12 @@ public class ApiService
         WriteIndented = true
     };
 
-    public async Task<CarData> QueryData()
+    public async Task<CarData> QueryRdwData(string licensePlate)
     {
         _client.DefaultRequestHeaders.Add("X-App-Token", AppToken);
         var cars = new List<CarData>();
 
-        var uri = new Uri("https://opendata.rdw.nl/resource/m9d7-ebf2.json?kenteken=S403XD");
+        var uri = new Uri($"https://opendata.rdw.nl/resource/m9d7-ebf2.json?kenteken={licensePlate}");
         try
         {
             var response = await _client.GetAsync(uri);

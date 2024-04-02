@@ -92,6 +92,28 @@
           }
         }
       },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -2418,6 +2440,28 @@
           }
         }
       },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -4731,6 +4775,28 @@
         "runtime": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {
             "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
           }
         }
       },
@@ -7050,6 +7116,28 @@
           }
         }
       },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -9363,6 +9451,28 @@
         "runtime": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {
             "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
           }
         }
       },
@@ -11682,6 +11792,28 @@
           }
         }
       },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -13995,6 +14127,28 @@
         "runtime": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {
             "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
           }
         }
       },
@@ -16314,6 +16468,28 @@
           }
         }
       },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -18617,6 +18793,28 @@
           }
         }
       },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -19943,6 +20141,28 @@
         "runtime": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {
             "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
           }
         }
       },
@@ -21455,6 +21675,28 @@
           }
         }
       },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -22961,6 +23203,28 @@
         "runtime": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {
             "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
           }
         }
       },
@@ -24473,6 +24737,28 @@
           }
         }
       },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -25979,6 +26265,28 @@
         "runtime": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {
             "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
           }
         }
       },
@@ -27491,6 +27799,28 @@
           }
         }
       },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -28997,6 +29327,28 @@
         "runtime": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {
             "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
           }
         }
       },
@@ -30516,6 +30868,28 @@
           }
         }
       },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -31842,6 +32216,28 @@
         "runtime": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {
             "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
           }
         }
       },
@@ -33354,6 +33750,28 @@
           }
         }
       },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -34860,6 +35278,28 @@
         "runtime": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {
             "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
           }
         }
       },
@@ -36372,6 +36812,28 @@
           }
         }
       },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -37878,6 +38340,28 @@
         "runtime": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {
             "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
           }
         }
       },
@@ -39390,6 +39874,28 @@
           }
         }
       },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -40896,6 +41402,28 @@
         "runtime": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {
             "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
           }
         }
       },
@@ -42416,6 +42944,28 @@
           }
         }
       },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -43904,6 +44454,28 @@
         "runtime": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {
             "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
           }
         }
       },
@@ -45544,6 +46116,28 @@
           }
         }
       },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -47178,6 +47772,28 @@
         "runtime": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {
             "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
           }
         }
       },
@@ -48818,6 +49434,28 @@
           }
         }
       },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -50452,6 +51090,28 @@
         "runtime": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {
             "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
           }
         }
       },
@@ -52092,6 +52752,28 @@
           }
         }
       },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -53726,6 +54408,28 @@
         "runtime": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {
             "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
+            "related": ".pdb"
+          },
+          "lib/net45/HtmlAgilityPack.dll": {
+            "related": ".CssSelectors.pdb;.xml"
           }
         }
       },
@@ -55464,6 +56168,21 @@
         "lib/uap10.0/HtmlAgilityPack.dll",
         "lib/uap10.0/HtmlAgilityPack.pdb",
         "lib/uap10.0/HtmlAgilityPack.pri"
+      ]
+    },
+    "HtmlAgilityPack.CssSelectors/1.0.2": {
+      "sha512": "bB4FeVvcNROENPWQfFSmPQ6q99jGk8ru5QoBB3qnEeaP451fjnqQ0uPuMgmWHAOZIXUAoOQozv/5fEEVSDyIzA==",
+      "type": "package",
+      "path": "htmlagilitypack.cssselectors/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "htmlagilitypack.cssselectors.1.0.2.nupkg.sha512",
+        "htmlagilitypack.cssselectors.nuspec",
+        "lib/net45/HtmlAgilityPack.CssSelectors.dll",
+        "lib/net45/HtmlAgilityPack.CssSelectors.pdb",
+        "lib/net45/HtmlAgilityPack.dll",
+        "lib/net45/HtmlAgilityPack.xml"
       ]
     },
     "Microsoft.CSharp/4.5.0": {
@@ -62526,6 +63245,7 @@
       "CommunityToolkit.Maui >= 7.0.1",
       "CommunityToolkit.Mvvm >= 8.2.2",
       "HtmlAgilityPack >= 1.11.60",
+      "HtmlAgilityPack.CssSelectors >= 1.0.2",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.6",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.6",
@@ -62536,6 +63256,7 @@
       "CommunityToolkit.Maui >= 7.0.1",
       "CommunityToolkit.Mvvm >= 8.2.2",
       "HtmlAgilityPack >= 1.11.60",
+      "HtmlAgilityPack.CssSelectors >= 1.0.2",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.6",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.6",
@@ -62546,6 +63267,7 @@
       "CommunityToolkit.Maui >= 7.0.1",
       "CommunityToolkit.Mvvm >= 8.2.2",
       "HtmlAgilityPack >= 1.11.60",
+      "HtmlAgilityPack.CssSelectors >= 1.0.2",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.6",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.6",
@@ -62556,6 +63278,7 @@
       "CommunityToolkit.Maui >= 7.0.1",
       "CommunityToolkit.Mvvm >= 8.2.2",
       "HtmlAgilityPack >= 1.11.60",
+      "HtmlAgilityPack.CssSelectors >= 1.0.2",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.6",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.6"
@@ -62637,6 +63360,10 @@
             "target": "Package",
             "version": "[1.11.60, )"
           },
+          "HtmlAgilityPack.CssSelectors": {
+            "target": "Package",
+            "version": "[1.0.2, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[8.0.0, )"
@@ -62695,6 +63422,10 @@
           "HtmlAgilityPack": {
             "target": "Package",
             "version": "[1.11.60, )"
+          },
+          "HtmlAgilityPack.CssSelectors": {
+            "target": "Package",
+            "version": "[1.0.2, )"
           },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
@@ -62755,6 +63486,10 @@
             "target": "Package",
             "version": "[1.11.60, )"
           },
+          "HtmlAgilityPack.CssSelectors": {
+            "target": "Package",
+            "version": "[1.0.2, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[8.0.0, )"
@@ -62814,6 +63549,10 @@
           "HtmlAgilityPack": {
             "target": "Package",
             "version": "[1.11.60, )"
+          },
+          "HtmlAgilityPack.CssSelectors": {
+            "target": "Package",
+            "version": "[1.0.2, )"
           },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
@@ -62879,5 +63618,17 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'HtmlAgilityPack.CssSelectors 1.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-android34.0'. This package may not be fully compatible with your project.",
+      "libraryId": "HtmlAgilityPack.CssSelectors",
+      "targetGraphs": [
+        "net8.0-android34.0"
+      ]
+    }
+  ]
 }

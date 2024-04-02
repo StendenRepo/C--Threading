@@ -3,41 +3,84 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:MainApp.ViewModels"
              x:DataType="viewModels:TuningViewModel"
-             x:Class="MainApp.Views.TuningResultPage">
+             x:Class="MainApp.Views.TuningResultPage"
+             BackgroundColor="#f5f7ff">
     <ContentPage.BindingContext>
         <viewModels:TuningViewModel></viewModels:TuningViewModel>
     </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <Style x:Key="TitleLabel" TargetType="Label">
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="FontAttributes" Value="Bold"></Setter>
+            <Setter Property="TextColor" Value="White"></Setter>
+            <Setter Property="FontFamily" Value=""></Setter>
+        </Style>
+        <Style x:Key="NormalLabel" TargetType="Label">
+            <Setter Property="TextColor" Value="White"></Setter>
+        </Style>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <Grid ColumnSpacing="2" Padding="50" ColumnDefinitions="*, *, *">
-            <Border>
+        <Grid ColumnSpacing="20" Padding="50" ColumnDefinitions="*, *, *">
+            <Border BackgroundColor="#f3797e" StrokeThickness="0">
                 <Border.StrokeShape>
-                    <RoundRectangle CornerRadius="20" />
+                    <RoundRectangle CornerRadius="10" />
                 </Border.StrokeShape>
-                <Grid BackgroundColor="Grey" Padding="20" RowDefinitions="Auto, *">
+                <Grid Padding="20" RowDefinitions="Auto, *" RowSpacing="25">
                     <Image Grid.Row="0" Height="350" Width="500" Source="{Binding CarData.ScrapedCarData.ImageUrl}" />
-                    <Border Grid.Row="1" BackgroundColor="Beige">
+                    <Border Grid.Row="1">
                         <Border.StrokeShape>
-                            <RoundRectangle CornerRadius="20" />
+                            <RoundRectangle CornerRadius="10" />
                         </Border.StrokeShape>
-                        <Grid Padding="20" RowDefinitions="*, *, *, *" ColumnDefinitions="Auto, *, 15, Auto, *" ColumnSpacing="10">
-                            <Label Grid.ColumnSpan="2" Text="{Binding CarData.FullName}" />
-                            <Label Grid.Row="1" Grid.Column="0" Text="Kenteken" />
-                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding CarData.LicensePlate}" />
-                            <Label Grid.Row="2" Grid.Column="0" Text="Type" />
-                            <Label Grid.Row="2" Grid.Column="1" Text="{Binding CarData.VehicleType}" />
-                            <Label Grid.Row="3" Grid.Column="0" Text="Vermogen (PK)" />
-                            <Label Grid.Row="3" Grid.Column="1" Text="{Binding CarData.ScrapedCarData.HorsePower}" />
-                            <Label Grid.Row="1" Grid.Column="3" Text="Koppel" />
-                            <Label Grid.Row="1" Grid.Column="4" Text="{Binding CarData.ScrapedCarData.Torque}" />
-                            <Label Grid.Row="2" Grid.Column="3" Text="Acceleratie (0-100)" />
-                            <Label Grid.Row="2" Grid.Column="4" Text="{Binding CarData.ScrapedCarData.Acceleration}" />
-                            <Label Grid.Row="3" Grid.Column="3" Text="Topsnelheid" />
-                            <Label Grid.Row="3" Grid.Column="4" Text="{Binding CarData.ScrapedCarData.TopSpeed}" />
+                        <Grid Padding="20" BackgroundColor="#f3797e" RowDefinitions="*, *, *, *, *, *, *" ColumnDefinitions="*, *">
+                            <Label Style="{StaticResource TitleLabel}" Grid.ColumnSpan="2" Text="{Binding CarData.FullName}" />
+                            <Label Style="{StaticResource NormalLabel}" Grid.Row="1" Grid.Column="0" Text="Kenteken" />
+                            <Label Style="{StaticResource NormalLabel}" Grid.Row="1" Grid.Column="1" Text="{Binding CarData.LicensePlate}" />
+                            <Label Style="{StaticResource NormalLabel}" Grid.Row="2" Grid.Column="0" Text="Type" />
+                            <Label Style="{StaticResource NormalLabel}" Grid.Row="2" Grid.Column="1" Text="{Binding CarData.VehicleType}" />
+                            <Label Style="{StaticResource NormalLabel}" Grid.Row="3" Grid.Column="0" Text="Vermogen (PK)" />
+                            <Label Style="{StaticResource NormalLabel}" Grid.Row="3" Grid.Column="1" Text="{Binding CarData.ScrapedCarData.HorsePower}" />
+                            <Label Style="{StaticResource NormalLabel}" Grid.Row="4" Grid.Column="0" Text="Koppel" />
+                            <Label Style="{StaticResource NormalLabel}" Grid.Row="4" Grid.Column="1" Text="{Binding CarData.ScrapedCarData.Torque}" />
+                            <Label Style="{StaticResource NormalLabel}" Grid.Row="5" Grid.Column="0" Text="Acceleratie (0-100)" />
+                            <Label Style="{StaticResource NormalLabel}" Grid.Row="5" Grid.Column="1" Text="{Binding CarData.ScrapedCarData.Acceleration}" />
+                            <Label Style="{StaticResource NormalLabel}" Grid.Row="6" Grid.Column="0" Text="Topsnelheid" />
+                            <Label Style="{StaticResource NormalLabel}" Grid.Row="6" Grid.Column="1" Text="{Binding CarData.ScrapedCarData.TopSpeed}" />
                         </Grid>
                     </Border>
                 </Grid>
             </Border>
-            <Button Grid.Column="1" Grid.Row="0" Command="{Binding ScrapeCommand}" />
+            <Grid Grid.Row="0" Grid.Column="1" RowDefinitions="*, *" RowSpacing="25">
+                <Border Grid.Row="0" BackgroundColor="#7da0fa" StrokeThickness="0">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="10" />
+                    </Border.StrokeShape>
+                    <Grid RowDefinitions="*, *, *, *" ColumnDefinitions="*, *, 2*" Padding="15">
+                        <Label Grid.Row="0" Grid.Column="0" Style="{StaticResource TitleLabel}" Text="Vermogen"></Label>
+                        <Label Style="{StaticResource NormalLabel}" VerticalOptions="Center" Grid.Row="1" Grid.Column="0" Text="Standaard"></Label>
+                        <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="1" Grid.Column="1" Text="{Binding CarData.ScrapedCarData.HorsePower}"></Label>
+                        <Label Style="{StaticResource NormalLabel}" VerticalOptions="Center" Grid.Row="2" Grid.Column="0" Text="Na tuning"></Label>
+                        <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="2" Grid.Column="1" Text="200"></Label>
+                        <Label Style="{StaticResource NormalLabel}" VerticalOptions="Center" Grid.Row="3" Grid.Column="0" Text="Verschil"></Label>
+                        <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Text="100" Grid.Row="3" Grid.Column="1"></Label>
+                        <BoxView Grid.RowSpan="3" Grid.Row="1" Grid.Column="2" BackgroundColor="Blue"></BoxView>
+                    </Grid>
+                </Border>
+                <Border Grid.Row="1" BackgroundColor="#7da0fa" StrokeThickness="0">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="10" />
+                    </Border.StrokeShape>
+                    <Grid RowDefinitions="*, *, *, *" ColumnDefinitions="*, *, 2*" Padding="15">
+                        <Label Grid.Row="0" Grid.Column="0" Style="{StaticResource TitleLabel}" Text="Koppel"></Label>
+                        <Label Style="{StaticResource NormalLabel}" VerticalOptions="Center" Grid.Row="1" Grid.Column="0" Text="Standaard"></Label>
+                        <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="1" Grid.Column="1" Text="{Binding CarData.ScrapedCarData.HorsePower}"></Label>
+                        <Label Style="{StaticResource NormalLabel}" VerticalOptions="Center" Grid.Row="2" Grid.Column="0" Text="Na tuning"></Label>
+                        <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="2" Grid.Column="1" Text="200"></Label>
+                        <Label Style="{StaticResource NormalLabel}" VerticalOptions="Center" Grid.Row="3" Grid.Column="0" Text="Verschil"></Label>
+                        <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="3" Grid.Column="1" Text="100"></Label>
+                        <BoxView Grid.RowSpan="3" Grid.Row="1" Grid.Column="2" BackgroundColor="Blue"></BoxView>
+                    </Grid>
+                </Border>
+            </Grid>
             <Label HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="2" Text="{Binding Plate}" />
         </Grid>
     </ContentPage.Content>

@@ -11,14 +11,7 @@ public partial class TuningViewModel : ObservableObject, IQueryAttributable
     [ObservableProperty] private string? _plate;
     [ObservableProperty] private CarData? _carData;
     private readonly IApiService _apiService = new ApiService();
-    private readonly CarSpecsWebScraper _webScraper = new CarSpecsWebScraper();
-
-    [RelayCommand]
-    private void Scrape()
-    {
-        if (Plate == null) return;
-        var scrapedData = _webScraper.GetCarSpecs(Plate);
-    }
+    private readonly CarSpecsWebScraper _webScraper = new();
     
     [RelayCommand]
     private async Task Submit(string licensePlate)

@@ -241,6 +241,9 @@
     <AppxPackagedFile Include="C:\Users\Jesse\.nuget\packages\htmlagilitypack\1.11.60\lib\netstandard2.0\HtmlAgilityPack.dll">
       <PackagePath>HtmlAgilityPack.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jesse\.nuget\packages\htmlagilitypack.cssselectors\1.0.2\lib\net45\HtmlAgilityPack.CssSelectors.dll">
+      <PackagePath>HtmlAgilityPack.CssSelectors.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jesse\.nuget\packages\microsoft.extensions.configuration\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
     </AppxPackagedFile>

@@ -14,31 +14,31 @@
                     <RoundRectangle CornerRadius="20" />
                 </Border.StrokeShape>
                 <Grid BackgroundColor="Grey" Padding="20" RowDefinitions="Auto, *">
-                    <Image Grid.Row="0" Height="350" Width="500" Source="https://pictures.vwe.nl/ATL/volkswagen/ATX_M2345_F2.jpg" />
+                    <Image Grid.Row="0" Height="350" Width="500" Source="{Binding CarData.ScrapedCarData.ImageUrl}" />
                     <Border Grid.Row="1" BackgroundColor="Beige">
                         <Border.StrokeShape>
                             <RoundRectangle CornerRadius="20" />
                         </Border.StrokeShape>
                         <Grid Padding="20" RowDefinitions="*, *, *, *" ColumnDefinitions="Auto, *, 15, Auto, *" ColumnSpacing="10">
-                            <Label Grid.ColumnSpan="2" Text="{Binding CarData.FullName}"></Label>
-                            <Label Grid.Row="1" Grid.Column="0" Text="Kenteken"></Label>
-                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding CarData.LicensePlate}"></Label>
-                            <Label Grid.Row="2" Grid.Column="0" Text="Type"></Label>
-                            <Label Grid.Row="2" Grid.Column="1" Text="{Binding CarData.VehicleType}"></Label>
-                            <Label Grid.Row="3" Grid.Column="0" Text="Vermogen (PK)"></Label>
-                            <Label Grid.Row="3" Grid.Column="1" Text="68"></Label>
-                            <Label Grid.Row="1" Grid.Column="3" Text="Koppel"></Label>
-                            <Label Grid.Row="1" Grid.Column="4" Text="95"></Label>
-                            <Label Grid.Row="2" Grid.Column="3" Text="Acceleratie (0-100)"></Label>
-                            <Label Grid.Row="2" Grid.Column="4" Text="14.4 sec"></Label>
-                            <Label Grid.Row="3" Grid.Column="3" Text="Topsnelheid"></Label>
-                            <Label Grid.Row="3" Grid.Column="4" Text="161 km/u"></Label>
+                            <Label Grid.ColumnSpan="2" Text="{Binding CarData.FullName}" />
+                            <Label Grid.Row="1" Grid.Column="0" Text="Kenteken" />
+                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding CarData.LicensePlate}" />
+                            <Label Grid.Row="2" Grid.Column="0" Text="Type" />
+                            <Label Grid.Row="2" Grid.Column="1" Text="{Binding CarData.VehicleType}" />
+                            <Label Grid.Row="3" Grid.Column="0" Text="Vermogen (PK)" />
+                            <Label Grid.Row="3" Grid.Column="1" Text="{Binding CarData.ScrapedCarData.HorsePower}" />
+                            <Label Grid.Row="1" Grid.Column="3" Text="Koppel" />
+                            <Label Grid.Row="1" Grid.Column="4" Text="{Binding CarData.ScrapedCarData.Torque}" />
+                            <Label Grid.Row="2" Grid.Column="3" Text="Acceleratie (0-100)" />
+                            <Label Grid.Row="2" Grid.Column="4" Text="{Binding CarData.ScrapedCarData.Acceleration}" />
+                            <Label Grid.Row="3" Grid.Column="3" Text="Topsnelheid" />
+                            <Label Grid.Row="3" Grid.Column="4" Text="{Binding CarData.ScrapedCarData.TopSpeed}" />
                         </Grid>
                     </Border>
                 </Grid>
             </Border>
-            <Button Grid.Column="1" Grid.Row="0" Command="{Binding ScrapeCommand}"></Button>
-            <Label HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="2" Text="{Binding Plate}"></Label>
+            <Button Grid.Column="1" Grid.Row="0" Command="{Binding ScrapeCommand}" />
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="2" Text="{Binding Plate}" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -16,7 +16,8 @@ public partial class TuningViewModel : ObservableObject, IQueryAttributable
     [RelayCommand]
     private void Scrape()
     {
-        _webScraper.GetCarSpecs();
+        if (Plate == null) return;
+        var scrapedData = _webScraper.GetCarSpecs(Plate);
     }
     
     [RelayCommand]
@@ -34,10 +35,16 @@ public partial class TuningViewModel : ObservableObject, IQueryAttributable
         {
             Task.Run(async () =>
             {
-                CarData = await _apiService.QueryRdwData(licensePlate);
+                await FetchCarData(licensePlate);
             }).GetAwaiter().GetResult();
         }
 
         Trace.WriteLine(licensePlate);
+    }
+
+    private async Task FetchCarData(string licensePlate)
+    {
+        CarData = await _apiService.QueryRdwData(licensePlate);
+        CarData.ScrapedCarData = _webScraper.GetCarSpecs(licensePlate);
     }
 }

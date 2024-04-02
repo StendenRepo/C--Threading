@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using HtmlAgilityPack;
 using MainApp.Models;
 
@@ -6,15 +5,12 @@ namespace MainApp.Logic;
 
 public class CarSpecsWebScraper
 {
-    public void GetCarSpecs()
+    public ScrapedCarData GetCarSpecs(string licensePlate)
     {
         var web = new HtmlWeb();
-        var scrapedData = new ScrapedCarData();
-        var doc = web.Load("https://finnik.nl/kenteken/s403xd");
+        var doc = web.Load($"https://finnik.nl/kenteken/{licensePlate}");
         var imageNodes = doc.DocumentNode.QuerySelector("img.d-block");
         var rowNodes = doc.DocumentNode.QuerySelectorAll("div.row");
-
-        var test = doc.DocumentNode.QuerySelector("div.col-6.col-sm-7.value").InnerText;
         
         var data = new Dictionary<string, string>();
         foreach (var row in rowNodes)
@@ -26,7 +22,7 @@ public class CarSpecsWebScraper
                 // Check if the child node is a div element
                 if (childNode is not { Name: "div" }) continue;
                 if (!childNode.HasClass("label")) continue;
-                var labelText = childNode.InnerText.Replace(" ", "").Replace("\n", "");
+                var labelText = childNode.InnerText.Replace("\n", "").Trim();
 
                 // Get the next sibling div (assuming it's the value)
                 var nextSibling = childNode.NextSibling;
@@ -35,9 +31,8 @@ public class CarSpecsWebScraper
                     // Skip non-div elements
                     if (nextSibling is { Name: "div" } divNode && divNode.HasClass("value"))
                     {
-                        var valueText = nextSibling.InnerText.Replace(" ", "").Replace("\n", "");
+                        var valueText = nextSibling.InnerText.Replace("\n", "").Trim();
                         data.TryAdd(labelText, valueText);
-                        Console.WriteLine($"Label: {labelText}, Value: {valueText}");
                         break; // Exit the loop once value div is found
                     }
 
@@ -50,11 +45,8 @@ public class CarSpecsWebScraper
         var horsePower = data["Vermogen"];
         var torque = data["Koppel"];
         var topSpeed = data["Topsnelheid"];
-        var acceleration = data["Acceleratie0-100"];
-        
-        Trace.WriteLine(horsePower);
-        Trace.WriteLine(torque);
-        Trace.WriteLine(topSpeed);
-        Trace.WriteLine(acceleration);
+        var acceleration = data["Acceleratie 0-100"];
+
+        return new ScrapedCarData(imageUrl, horsePower, torque, topSpeed, acceleration);
     }
 }

@@ -29,269 +29,269 @@
     <AppXManifest Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-04-02T18:05:56.433</Modified>
+      <Modified>2024-04-03T12:18:26.938</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-04-02T13:47:44.594</Modified>
+      <Modified>2024-04-03T11:23:01.487</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MainApp.runtimeconfig.json">
       <PackagePath>MainApp.runtimeconfig.json</PackagePath>
-      <Modified>2024-04-02T13:45:36.391</Modified>
+      <Modified>2024-04-02T18:11:48.684</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MainApp.dll">
       <PackagePath>MainApp.dll</PackagePath>
-      <Modified>2024-04-02T18:05:55.414</Modified>
+      <Modified>2024-04-03T12:18:25.765</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MainApp.exe</PackagePath>
-      <Modified>2024-04-02T18:05:55.570</Modified>
+      <Modified>2024-04-03T12:18:25.911</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2024-03-27T13:11:00.097</Modified>
+      <Modified>2024-04-02T18:10:37.906</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-04-02T13:45:30.788</Modified>
+      <Modified>2024-04-02T18:11:43.023</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-04-02T13:45:30.802</Modified>
+      <Modified>2024-04-02T18:11:43.048</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-04-02T13:45:30.821</Modified>
+      <Modified>2024-04-02T18:11:43.080</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-04-02T13:45:30.855</Modified>
+      <Modified>2024-04-02T18:11:43.129</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-04-02T13:45:31.017</Modified>
+      <Modified>2024-04-02T18:11:43.315</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2024-03-27T13:11:00.094</Modified>
+      <Modified>2024-04-02T18:10:37.895</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2024-03-27T13:11:00.095</Modified>
+      <Modified>2024-04-02T18:10:37.905</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-04-02T13:45:33.623</Modified>
+      <Modified>2024-04-02T18:11:45.543</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-04-02T13:45:34.242</Modified>
+      <Modified>2024-04-02T18:11:46.990</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-04-02T13:45:34.270</Modified>
+      <Modified>2024-04-02T18:11:47.027</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-04-02T13:45:34.292</Modified>
+      <Modified>2024-04-02T18:11:47.059</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-04-02T13:45:34.335</Modified>
+      <Modified>2024-04-02T18:11:47.111</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-04-02T13:45:34.503</Modified>
+      <Modified>2024-04-02T18:11:47.267</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.791</Modified>
+      <Modified>2024-04-02T18:11:46.410</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.798</Modified>
+      <Modified>2024-04-02T18:11:46.418</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.853</Modified>
+      <Modified>2024-04-02T18:11:46.522</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.805</Modified>
+      <Modified>2024-04-02T18:11:46.426</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.811</Modified>
+      <Modified>2024-04-02T18:11:46.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.751</Modified>
+      <Modified>2024-04-02T18:11:46.353</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.758</Modified>
+      <Modified>2024-04-02T18:11:46.363</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.785</Modified>
+      <Modified>2024-04-02T18:11:46.402</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.766</Modified>
+      <Modified>2024-04-02T18:11:46.371</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.773</Modified>
+      <Modified>2024-04-02T18:11:46.380</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.647</Modified>
+      <Modified>2024-04-02T18:11:46.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.656</Modified>
+      <Modified>2024-04-02T18:11:46.217</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.666</Modified>
+      <Modified>2024-04-02T18:11:46.229</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.677</Modified>
+      <Modified>2024-04-02T18:11:46.244</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.688</Modified>
+      <Modified>2024-04-02T18:11:46.263</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.698</Modified>
+      <Modified>2024-04-02T18:11:46.273</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.706</Modified>
+      <Modified>2024-04-02T18:11:46.286</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.744</Modified>
+      <Modified>2024-04-02T18:11:46.345</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.715</Modified>
+      <Modified>2024-04-02T18:11:46.301</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.725</Modified>
+      <Modified>2024-04-02T18:11:46.320</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.993</Modified>
+      <Modified>2024-04-02T18:11:46.677</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-04-02T13:45:34.006</Modified>
+      <Modified>2024-04-02T18:11:46.692</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-04-02T13:45:34.021</Modified>
+      <Modified>2024-04-02T18:11:46.710</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-04-02T13:45:34.042</Modified>
+      <Modified>2024-04-02T18:11:46.736</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-04-02T13:45:34.084</Modified>
+      <Modified>2024-04-02T18:11:46.785</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.923</Modified>
+      <Modified>2024-04-02T18:11:46.606</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.936</Modified>
+      <Modified>2024-04-02T18:11:46.616</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.947</Modified>
+      <Modified>2024-04-02T18:11:46.627</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.960</Modified>
+      <Modified>2024-04-02T18:11:46.640</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.981</Modified>
+      <Modified>2024-04-02T18:11:46.664</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.864</Modified>
+      <Modified>2024-04-02T18:11:46.533</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.873</Modified>
+      <Modified>2024-04-02T18:11:46.547</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.884</Modified>
+      <Modified>2024-04-02T18:11:46.562</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.894</Modified>
+      <Modified>2024-04-02T18:11:46.577</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.911</Modified>
+      <Modified>2024-04-02T18:11:46.595</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-04-02T13:45:34.100</Modified>
+      <Modified>2024-04-02T18:11:46.796</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-04-02T13:45:34.118</Modified>
+      <Modified>2024-04-02T18:11:46.811</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-04-02T13:45:34.140</Modified>
+      <Modified>2024-04-02T18:11:46.828</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-04-02T13:45:34.166</Modified>
+      <Modified>2024-04-02T18:11:46.865</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-04-02T13:45:34.224</Modified>
+      <Modified>2024-04-02T18:11:46.963</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.609</Modified>
+      <Modified>2024-04-02T18:11:45.415</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.621</Modified>
+      <Modified>2024-04-02T18:11:45.429</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.635</Modified>
+      <Modified>2024-04-02T18:11:45.443</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.656</Modified>
+      <Modified>2024-04-02T18:11:46.212</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-04-02T13:45:33.731</Modified>
+      <Modified>2024-04-02T18:11:46.310</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\kenteken_eu.scale-100.png">
       <PackagePath>kenteken_eu.scale-100.png</PackagePath>
-      <Modified>2024-03-27T13:11:00.096</Modified>
+      <Modified>2024-04-02T18:10:37.906</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Stenden\Jaar3\Threading\C--Threading\MainApp\MainApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MainApp.deps.json">
       <PackagePath>MainApp.deps.json</PackagePath>
-      <Modified>2024-04-02T13:45:36.343</Modified>
+      <Modified>2024-04-02T18:11:48.629</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jesse\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

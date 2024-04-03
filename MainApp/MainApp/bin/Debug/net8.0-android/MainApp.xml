@@ -27,6 +27,9 @@
         <member name="P:MainApp.ViewModels.TuningViewModel.CarData">
             <inheritdoc cref="F:MainApp.ViewModels.TuningViewModel._carData"/>
         </member>
+        <member name="P:MainApp.ViewModels.TuningViewModel.TuningResult">
+            <inheritdoc cref="F:MainApp.ViewModels.TuningViewModel._tuningResult"/>
+        </member>
         <member name="F:MainApp.ViewModels.TuningViewModel.submitCommand">
             <summary>The backing field for <see cref="P:MainApp.ViewModels.TuningViewModel.SubmitCommand"/>.</summary>
         </member>
@@ -165,6 +168,9 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CarData">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CarData" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TuningResult">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TuningResult" generated properties.</summary>
+        </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
             A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
@@ -176,6 +182,9 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CarData">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CarData" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TuningResult">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TuningResult" generated properties.</summary>
         </member>
     </members>
 </doc>

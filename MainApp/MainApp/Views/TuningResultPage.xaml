@@ -59,9 +59,9 @@
                         <Label Style="{StaticResource NormalLabel}" VerticalOptions="Center" Grid.Row="1" Grid.Column="0" Text="Standaard"></Label>
                         <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="1" Grid.Column="1" Text="{Binding CarData.ScrapedCarData.HorsePower}"></Label>
                         <Label Style="{StaticResource NormalLabel}" VerticalOptions="Center" Grid.Row="2" Grid.Column="0" Text="Na tuning"></Label>
-                        <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="2" Grid.Column="1" Text="200"></Label>
+                        <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="2" Grid.Column="1" Text="{Binding TuningResult.HorsePowerAfterTuningAsString}"></Label>
                         <Label Style="{StaticResource NormalLabel}" VerticalOptions="Center" Grid.Row="3" Grid.Column="0" Text="Verschil"></Label>
-                        <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Text="100" Grid.Row="3" Grid.Column="1"></Label>
+                        <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="3" Grid.Column="1" Text="{Binding TuningResult.HorsePowerDifferenceAsString}"></Label>
                         <BoxView Grid.RowSpan="3" Grid.Row="1" Grid.Column="2" BackgroundColor="Blue"></BoxView>
                     </Grid>
                 </Border>
@@ -72,11 +72,11 @@
                     <Grid RowDefinitions="*, *, *, *" ColumnDefinitions="*, *, 2*" Padding="15">
                         <Label Grid.Row="0" Grid.Column="0" Style="{StaticResource TitleLabel}" Text="Koppel"></Label>
                         <Label Style="{StaticResource NormalLabel}" VerticalOptions="Center" Grid.Row="1" Grid.Column="0" Text="Standaard"></Label>
-                        <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="1" Grid.Column="1" Text="{Binding CarData.ScrapedCarData.HorsePower}"></Label>
+                        <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="1" Grid.Column="1" Text="{Binding CarData.ScrapedCarData.Torque}"></Label>
                         <Label Style="{StaticResource NormalLabel}" VerticalOptions="Center" Grid.Row="2" Grid.Column="0" Text="Na tuning"></Label>
-                        <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="2" Grid.Column="1" Text="200"></Label>
+                        <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="2" Grid.Column="1" Text="{Binding TuningResult.TorqueAfterTuningAsString}"></Label>
                         <Label Style="{StaticResource NormalLabel}" VerticalOptions="Center" Grid.Row="3" Grid.Column="0" Text="Verschil"></Label>
-                        <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="3" Grid.Column="1" Text="100"></Label>
+                        <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="3" Grid.Column="1" Text="{Binding TuningResult.TorqueDifferenceAsString}"></Label>
                         <BoxView Grid.RowSpan="3" Grid.Row="1" Grid.Column="2" BackgroundColor="Blue"></BoxView>
                     </Grid>
                 </Border>

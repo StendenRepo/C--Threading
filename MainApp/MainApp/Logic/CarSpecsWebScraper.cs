@@ -42,7 +42,7 @@ public class CarSpecsWebScraper
         }
         
         var imageUrl = HtmlEntity.DeEntitize(imageNodes.QuerySelector("img").Attributes["src"].Value);
-        var horsePower = data["Vermogen"];
+        var horsePower = data["Vermogen"].Split("(").Last().Replace(")", " ");
         var torque = data["Koppel"];
         var topSpeed = data["Topsnelheid"];
         var acceleration = data["Acceleratie 0-100"];

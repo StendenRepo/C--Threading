@@ -7,22 +7,15 @@
     <ContentPage.BindingContext>
         <viewModels:TuningViewModel></viewModels:TuningViewModel>
     </ContentPage.BindingContext>
-    <StackLayout Padding="10" VerticalOptions="Center">
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="1*" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="4*"/>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="2*"/>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="4*"/>
-            </Grid.ColumnDefinitions>
+    <FlexLayout Direction="Column" JustifyContent="SpaceAround" AlignItems="Center">
+        <HorizontalStackLayout>
+                <Label Text="Vul hier het kenteken in: " VerticalTextAlignment="Center" FontSize="24"/>
+                <Entry x:Name="cta_subForm" Text="{Binding Plate}" MaxLength="8" BackgroundColor="#f0b504" HorizontalTextAlignment="Center" TextTransform="Uppercase" TextColor="Black" FontSize="22" FontAttributes="Bold" MinimumWidthRequest="200"/>
+                <Button Text="Bereken" Command="{Binding SubmitCommand }" FontSize="14" CommandParameter="{Binding Source={x:Reference cta_subForm}, Path=Text}"/>
+        </HorizontalStackLayout>
+        
 
-            <Label Grid.Row="0" Grid.Column="1" Text="Vul hier het kenteken in: " VerticalTextAlignment="Center" FontSize="24"/>
-            <Entry Grid.Row="0" Grid.Column="2" x:Name="cta_subForm" Text="{Binding Plate}" MaxLength="8" BackgroundColor="#f0b504" HorizontalTextAlignment="Center" TextTransform="Uppercase" TextColor="Black" FontSize="22" FontAttributes="Bold"/>
-            <Button Grid.Row="0" Grid.Column="3" Text="Bereken" Command="{Binding SubmitCommand }" FontSize="14" CommandParameter="{Binding Source={x:Reference cta_subForm}, Path=Text}"/>
-        </Grid>
-    </StackLayout>
+        <Button VerticalOptions="Center" HorizontalOptions="Center" Text="Export All Data" Command="{Binding ExportDataCommand }" FontSize="14"/>
+    </FlexLayout>
+    
 </ContentPage>

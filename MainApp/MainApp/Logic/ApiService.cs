@@ -39,6 +39,30 @@ public class ApiService : IApiService
 
         return cars.FirstOrDefault();
     }
+    
+    public async Task<List<CarData>> QueryAllRdwData()
+    {
+        _client.DefaultRequestHeaders.Add("X-App-Token", AppToken);
+        var cars = new List<CarData>();
+
+        var uri = new Uri($"https://opendata.rdw.nl/resource/m9d7-ebf2.json");
+        
+        try
+        {
+            var response = await _client.GetAsync(uri);
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                cars = JsonSerializer.Deserialize<List<CarData>>(content, _serializerOptions);
+            }
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine(@"\tERROR {0}", ex.Message);
+        }
+        
+        return cars;
+    }
 
     public async Task SearchImage()
     {

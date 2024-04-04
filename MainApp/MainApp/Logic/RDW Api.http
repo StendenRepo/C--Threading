@@ -1,0 +1,5 @@
+GET https://opendata.rdw.nl/resource/m9d7-ebf2.json
+Accept: application/json
+X-App-Token: Fyr47PwDKOX44RykT02Tc0Fky
+
+###

@@ -52,15 +52,15 @@ public partial class TuningViewModel : ObservableObject, IQueryAttributable
     private async Task ExportData()
     {
         await FetchAllCarData();
-        // await SaveFile(new CancellationToken());
     }
 
     private async Task FetchAllCarData()
     {
         var data = await _apiService.QueryAllRdwData();
-        SaveCarDataToFileAsync(data);
+        await SaveCarDataToFileAsync(data);
     }
-    public Task SaveCarDataToFileAsync(IEnumerable<CarData> carData)
+
+    private Task SaveCarDataToFileAsync(IEnumerable<CarData> carData)
     {
         var saveThread = new Thread(async () =>
         {
@@ -71,22 +71,16 @@ public partial class TuningViewModel : ObservableObject, IQueryAttributable
 
                 memoryStream.Position = 0;
 
-                var saveResult = await FileSaver.Default.SaveAsync("Test.txt", memoryStream,
+                var saveResult = await FileSaver.Default.SaveAsync("queriedRdwData.txt", memoryStream,
                     cancellationToken: CancellationToken.None);
 
                 if (saveResult.IsSuccessful)
                 {
-                    Device.BeginInvokeOnMainThread(async () =>
-                    {
-                        await Toast.Make($"The file was saved successfully to {saveResult.FilePath}").Show();
-                    });
+                    await Toast.Make($"The file was saved successfully to {saveResult.FilePath}").Show();
                 }
                 else
                 {
-                    Device.BeginInvokeOnMainThread(async () =>
-                    {
-                        await Toast.Make($"Error saving file: {saveResult.Exception.Message}").Show();
-                    });
+                    await Toast.Make($"Error saving file: {saveResult.Exception.Message}").Show();
                 }
             }
         });

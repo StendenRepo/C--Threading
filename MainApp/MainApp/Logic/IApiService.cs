@@ -4,6 +4,6 @@ namespace MainApp.Logic;
 
 public interface IApiService
 {
-    Task<CarData> QueryRdwData(string licensePlate);
-    Task<List<CarData>> QueryAllRdwData();
+    Task<CarData> QueryRdwDataAsync(string licensePlate);
+    Task<List<CarData>> QueryAllRdwDataInParallel();
 }

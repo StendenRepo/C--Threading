@@ -5,11 +5,18 @@ namespace MainApp.Logic;
 
 public class CarSpecsWebScraper
 {
+    /// <summary>
+    /// Scrapes car data.
+    /// </summary>
+    /// <param name="licensePlate">The license plate.</param>
+    /// <returns>A Task with <see cref="ScrapedCarData"/>.</returns>
     public async Task<ScrapedCarData> GetCarSpecs(string licensePlate)
     {
         var web = new HtmlWeb();
         var doc = await web.LoadFromWebAsync($"https://finnik.nl/kenteken/{licensePlate}");
         var imageNodes = doc.DocumentNode.QuerySelector("img.d-block");
+        
+        // Select all nodes with the row class
         var rowNodes = doc.DocumentNode.QuerySelectorAll("div.row");
         
         var data = new Dictionary<string, string>();
@@ -24,6 +31,7 @@ public class CarSpecsWebScraper
                 if (!childNode.HasClass("label")) continue;
                 var labelText = childNode.InnerText.Replace("\n", "").Trim();
                 
+                // Get the next html tag (should contain the value corresponding to the label)
                 var nextSibling = childNode.NextSibling;
                 while (nextSibling != null)
                 {

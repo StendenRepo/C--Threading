@@ -10,9 +10,10 @@ Naast deze functionaliteit zal het ook nog mogelijk zijn om data van de RDW op t
 
 De volgende vormen van threading zijn gebruikt:
 
-- Het exporteren van de RDW data wordt op een aparte thread gedaan
+- Het exporteren van de RDW data naar een tekstbestand wordt op een aparte thread gedaan
 - Voor het ophalen van de RDW data gebruiken we Async I/O
-- In het grootste gedeelte van de app maken we ook gebruik van de Task Parallel library / Async await
+- Voor het ophalen van 500000 RDW records gebruiken Task Parallel library / Async await
+- In het grootste gedeelte van de app maken we ook gebruik van async await
 
 ## Requirements
 

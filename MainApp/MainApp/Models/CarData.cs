@@ -4,7 +4,7 @@ namespace MainApp.Models;
 
 
 [Serializable]
-public class CarData(ScrapedCarData scrapedCarData)
+public class CarData
 {
     [JsonPropertyName("kenteken")] 
     public string? LicensePlate { get; set; }
@@ -24,10 +24,7 @@ public class CarData(ScrapedCarData scrapedCarData)
     [JsonPropertyName("eerste_kleur")]
     public string? PrimaryColor { get; set; }
     
-    [JsonPropertyName("tweede_kleur")]
-    public string? SecondaryColor { get; set; }
-    
-    public ScrapedCarData ScrapedCarData { get; set; } = scrapedCarData;
+    public ScrapedCarData? ScrapedCarData { get; set; }
 
     public string FullName => Make + " " + MakeType;
 }

@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Text.Json;
 using CommunityToolkit.Maui.Alerts;
 using CommunityToolkit.Maui.Storage;
@@ -27,7 +28,7 @@ public partial class TuningViewModel : ObservableObject, IQueryAttributable
     {
         if (licensePlate is not { Length: 6 })
         {
-            await Shell.Current.DisplayAlert("Er ging iets fout", "Vul een geldig kenteken in", "Ok");
+            await Shell.Current.DisplayAlert("Er ging iets fout", "Vul een geldig kenteken in. Bijvoorbeeld: S403XF", "Ok");
             return;
         }
         await Shell.Current.GoToAsync($"TuningResultPage?license={licensePlate}");
@@ -38,9 +39,14 @@ public partial class TuningViewModel : ObservableObject, IQueryAttributable
         Plate = query["license"] as string;
     }
 
+    /// <summary>
+    /// Fetches the car data corresponding to the license plate.
+    /// </summary>
+    /// <param name="licensePlate">The license plate.</param>
+    /// <returns>A task with <see cref="CarData"/>.</returns>
     private async Task<CarData> FetchCarData(string licensePlate)
     {
-        var carData = await _apiService.QueryRdwData(licensePlate);
+        var carData = await _apiService.QueryRdwDataAsync(licensePlate);
 
         carData.ScrapedCarData = await _webScraper.GetCarSpecs(licensePlate);
 
@@ -51,6 +57,9 @@ public partial class TuningViewModel : ObservableObject, IQueryAttributable
         return carData;
     }
 
+    /// <summary>
+    /// When loading TuningResultPage this method gets executed.
+    /// </summary>
     [RelayCommand]
     private async Task Appearing()
     {
@@ -69,8 +78,12 @@ public partial class TuningViewModel : ObservableObject, IQueryAttributable
         }
     }
 
+    /// <summary>
+    /// Generates the charts for horsepower and torque
+    /// </summary>
     private void GenerateCharts()
     {
+        // Create data entries to display in the chart
         var horsePowerEntries = new[]
         {
             new ChartEntry((float)TuningResult!.HorsePowerBeforeTuning)
@@ -122,19 +135,27 @@ public partial class TuningViewModel : ObservableObject, IQueryAttributable
         };
     }
 
+    /// <summary>
+    /// Exports RDW data.
+    /// </summary>
     [RelayCommand]
     private async Task ExportData()
     {
         IsLoading = true;
-        await SaveCarDataToFileAsync();
+        var carData = await _apiService.QueryAllRdwDataInParallel();
+        await SaveCarDataToFileAsync(carData);
     }
     
-    private Task SaveCarDataToFileAsync()
+    /// <summary>
+    /// Saves all rdw data to a text file.
+    /// </summary>
+    /// <param name="carData">A <see cref="CarData"/>.</param>
+    /// <returns>A Task</returns>
+    private Task SaveCarDataToFileAsync(List<CarData> carData)
     {
+        // Create a new thread for writing data to text file.
         var saveThread = new Thread(async () =>
         {
-            var carData = await _apiService.QueryAllRdwData();
-            IsLoading = false;
             using (var memoryStream = new MemoryStream())
             {
                 var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
@@ -142,9 +163,11 @@ public partial class TuningViewModel : ObservableObject, IQueryAttributable
 
                 memoryStream.Position = 0;
 
+                // Save the stream to a text file
                 var saveResult = await FileSaver.Default.SaveAsync("queriedRdwData.txt", memoryStream,
                     cancellationToken: CancellationToken.None);
 
+                // Provide message based on outcome
                 if (saveResult.IsSuccessful)
                 {
                     await Toast.Make($"The file was saved successfully to {saveResult.FilePath}").Show();
@@ -154,6 +177,7 @@ public partial class TuningViewModel : ObservableObject, IQueryAttributable
                     await Toast.Make($"Error saving file: {saveResult.Exception.Message}").Show();
                 }
             }
+            IsLoading = false;
         });
         saveThread.Start();
         saveThread.Join();

@@ -8,5 +8,6 @@ public partial class AppShell : Shell
     {
         InitializeComponent();
         Routing.RegisterRoute(nameof(TuningResultPage), typeof(TuningResultPage));
+        Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
     }
 }

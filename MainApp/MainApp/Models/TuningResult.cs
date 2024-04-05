@@ -4,8 +4,10 @@ namespace MainApp.Models;
 
 public class TuningResult
 {
-    private double HorsePowerAfterTuning { get; set; }
-    private double TorqueAfterTuning { get; set; }
+    public double HorsePowerBeforeTuning { get; set; }
+    public double TorqueBeforeTuning { get; set; }
+    public double HorsePowerAfterTuning { get; set; }
+    public double TorqueAfterTuning { get; set; }
     
     public string HorsePowerDifferenceAsString { get; private set; }
     public string TorqueDifferenceAsString { get; private set; }
@@ -24,7 +26,9 @@ public class TuningResult
         var random = new Random();
         var horsePowerAsInt = Convert.ToDouble(Regex.Match(horsePower, @"\d+\.*\d*").Value);
         var torqueAsInt = Convert.ToDouble(Regex.Match(torque, @"\d+\.*\d*").Value);
-        
+
+        HorsePowerBeforeTuning = horsePowerAsInt;
+        TorqueBeforeTuning = torqueAsInt;
         HorsePowerAfterTuning = horsePowerAsInt + Math.Round(horsePowerAsInt * random.Next(10, 35) / 100);
         TorqueAfterTuning = torqueAsInt + Math.Round(torqueAsInt * random.Next(10, 35) / 100);
         HorsePowerDifferenceAsString = (HorsePowerAfterTuning - horsePowerAsInt) + " PK";

@@ -1,13 +1,13 @@
-using System.Diagnostics;
-using System.Text;
 using System.Text.Json;
-using System.Text.RegularExpressions;
 using CommunityToolkit.Maui.Alerts;
 using CommunityToolkit.Maui.Storage;
+using System.Globalization;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using MainApp.Logic;
 using MainApp.Models;
+using Microcharts;
+using SkiaSharp;
 
 namespace MainApp.ViewModels;
 
@@ -16,36 +16,109 @@ public partial class TuningViewModel : ObservableObject, IQueryAttributable
     [ObservableProperty] private string? _plate;
     [ObservableProperty] private CarData? _carData;
     [ObservableProperty] private TuningResult? _tuningResult;
+    [ObservableProperty] private Chart _horsePowerChart;
+    [ObservableProperty] private Chart _torqueChart;
     private readonly IApiService _apiService = new ApiService();
     private readonly CarSpecsWebScraper _webScraper = new();
 
     [RelayCommand]
     private async Task Submit(string licensePlate)
     {
+        if (licensePlate is not { Length: 6 })
+        {
+            await Shell.Current.DisplayAlert("Er ging iets fout", "Vul een geldig kenteken in", "Ok");
+            return;
+        }
         await Shell.Current.GoToAsync($"TuningResultPage?license={licensePlate}");
     }
 
     public void ApplyQueryAttributes(IDictionary<string, object> query)
     {
-        var licensePlate = Plate = query["license"] as string;
-
-        // Create separate thread to prevent deadlock
-        if (licensePlate != null)
-        {
-            Task.Run(async () => { await FetchCarData(licensePlate); }).GetAwaiter().GetResult();
-        }
-
-        Trace.WriteLine(licensePlate);
+        Plate = query["license"] as string;
     }
 
-    private async Task FetchCarData(string licensePlate)
+    private async Task<CarData> FetchCarData(string licensePlate)
     {
-        CarData = await _apiService.QueryRdwData(licensePlate);
+        var carData = await _apiService.QueryRdwData(licensePlate);
 
-        CarData.ScrapedCarData = _webScraper.GetCarSpecs(licensePlate);
+        carData.ScrapedCarData = await _webScraper.GetCarSpecs(licensePlate);
 
-        if (CarData.ScrapedCarData.HorsePower == null || CarData.ScrapedCarData.Torque == null) return;
-        TuningResult = new TuningResult(CarData.ScrapedCarData.HorsePower, CarData.ScrapedCarData.Torque);
+        if (carData.ScrapedCarData is { HorsePower: not null, Torque: not null })
+        {
+            TuningResult = new TuningResult(carData.ScrapedCarData.HorsePower, carData.ScrapedCarData.Torque);
+        }
+        return carData;
+    }
+
+    [RelayCommand]
+    private async Task Appearing()
+    {
+        try
+        {
+            if (Plate != null)
+            {
+                CarData = await FetchCarData(Plate);
+                GenerateCharts();
+            }
+        }
+        catch (Exception)
+        {
+            await Shell.Current.DisplayAlert("Er ging iets fout", "Kenteken kon niet gevonden worden", "Ga terug");
+            await Shell.Current.GoToAsync("///MainPage");
+        }
+    }
+
+    private void GenerateCharts()
+    {
+        var horsePowerEntries = new[]
+        {
+            new ChartEntry((float)TuningResult!.HorsePowerBeforeTuning)
+            {
+                Label = "Voor tuning",
+                ValueLabel = TuningResult.HorsePowerBeforeTuning.ToString(CultureInfo.InvariantCulture),
+                Color = SKColor.Parse("#266488")
+            },
+            new ChartEntry((float)TuningResult!.HorsePowerAfterTuning)
+            {
+                Label = "Na tuning",
+                ValueLabel = TuningResult.HorsePowerAfterTuning.ToString(CultureInfo.InvariantCulture),
+                Color = SKColor.Parse("#68b9c0")
+            }
+        };
+        
+        var torqueEntries = new[]
+        {
+            new ChartEntry((float)TuningResult!.TorqueBeforeTuning)
+            {
+                Label = "Voor tuning",
+                ValueLabel = TuningResult.TorqueBeforeTuning.ToString(CultureInfo.InvariantCulture),
+                Color = SKColor.Parse("#266488")
+            },
+            new ChartEntry((float)TuningResult!.TorqueAfterTuning)
+            {
+                Label = "Na tuning",
+                ValueLabel = TuningResult.TorqueAfterTuning.ToString(CultureInfo.InvariantCulture),
+                Color = SKColor.Parse("#68b9c0")
+            }
+        };
+        
+        HorsePowerChart = new BarChart()
+        {
+            Entries = horsePowerEntries,
+            CornerRadius = 10,
+            MaxValue = (float)TuningResult.HorsePowerAfterTuning + 100,
+            BackgroundColor = SKColor.Parse("#fae39d"),
+            ValueLabelOrientation = Orientation.Horizontal,
+            LabelOrientation = Orientation.Horizontal,
+            LabelTextSize = 15,
+            ShowYAxisLines = true,
+        };
+        TorqueChart = new DonutChart()
+        {
+            Entries = torqueEntries,
+            MaxValue = (float)TuningResult.TorqueAfterTuning + 100,
+            BackgroundColor = SKColor.Parse("#fae39d"),
+        };
     }
 
     [RelayCommand]

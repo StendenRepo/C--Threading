@@ -34,7 +34,8 @@ public class ApiService : IApiService
         }
         catch (Exception ex)
         {
-            Debug.WriteLine(@"\tERROR {0}", ex.Message);
+            Debug.WriteLine(@" Error {0}", ex.Message);
+            throw new Exception();
         }
 
         return cars.FirstOrDefault();
@@ -64,24 +65,23 @@ public class ApiService : IApiService
         return cars;
     }
 
-    public async Task SearchImage()
-    {
-        // _client.DefaultRequestHeaders.Add("X-App-Token", AppToken);
-        var cars = new List<CarData>();
-
-        var uri = new Uri($"https://www.googleapis.com/customsearch/v1?key={GoogleApiKey}&cx={SearchEngineId}&searchType=image&imgDominantColor=white&q=volkswagen+UP!");
-        try
-        {
-            var response = await _client.GetAsync(uri);
-            if (response.IsSuccessStatusCode)
-            {
-                var content = await response.Content.ReadAsStringAsync();
-                cars = JsonSerializer.Deserialize<List<CarData>>(content, _serializerOptions);
-            }
-        }
-        catch (Exception ex)
-        {
-            Debug.WriteLine(@"\tERROR {0}", ex.Message);
-        }
-    }
+    // public async Task SearchImage()
+    // {
+    //     var cars = new List<CarData>();
+    //
+    //     var uri = new Uri($"https://www.googleapis.com/customsearch/v1?key={GoogleApiKey}&cx={SearchEngineId}&searchType=image&imgDominantColor=white&q=volkswagen+UP!");
+    //     try
+    //     {
+    //         var response = await _client.GetAsync(uri);
+    //         if (response.IsSuccessStatusCode)
+    //         {
+    //             var content = await response.Content.ReadAsStringAsync();
+    //             cars = JsonSerializer.Deserialize<List<CarData>>(content, _serializerOptions);
+    //         }
+    //     }
+    //     catch (Exception ex)
+    //     {
+    //         Debug.WriteLine(@"\tERROR {0}", ex.Message);
+    //     }
+    // }
 }

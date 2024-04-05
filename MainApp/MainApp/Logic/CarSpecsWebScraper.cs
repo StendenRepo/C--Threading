@@ -5,10 +5,10 @@ namespace MainApp.Logic;
 
 public class CarSpecsWebScraper
 {
-    public ScrapedCarData GetCarSpecs(string licensePlate)
+    public async Task<ScrapedCarData> GetCarSpecs(string licensePlate)
     {
         var web = new HtmlWeb();
-        var doc = web.Load($"https://finnik.nl/kenteken/{licensePlate}");
+        var doc = await web.LoadFromWebAsync($"https://finnik.nl/kenteken/{licensePlate}");
         var imageNodes = doc.DocumentNode.QuerySelector("img.d-block");
         var rowNodes = doc.DocumentNode.QuerySelectorAll("div.row");
         

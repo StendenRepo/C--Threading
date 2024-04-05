@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:MainApp.ViewModels"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:chart="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
              x:DataType="viewModels:TuningViewModel"
              x:Class="MainApp.Views.TuningResultPage"
              BackgroundColor="#f5f7ff">
@@ -18,7 +20,14 @@
         <Style x:Key="NormalLabel" TargetType="Label">
             <Setter Property="TextColor" Value="White"></Setter>
         </Style>
+        <Style x:Key="ValueLabel" TargetType="Label">
+            <Setter Property="TextColor" Value="White"></Setter>
+            <Setter Property="FontAttributes" Value="Bold"></Setter>
+        </Style>
     </ContentPage.Resources>
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior Command="{Binding AppearingCommand}" EventName="Appearing" />
+    </ContentPage.Behaviors>
     <ContentPage.Content>
         <Grid ColumnSpacing="20" Padding="50" ColumnDefinitions="*, *, *">
             <Border BackgroundColor="#f3797e" StrokeThickness="0">
@@ -57,12 +66,11 @@
                     <Grid RowDefinitions="*, *, *, *" ColumnDefinitions="*, *, 2*" Padding="15">
                         <Label Grid.Row="0" Grid.Column="0" Style="{StaticResource TitleLabel}" Text="Vermogen"></Label>
                         <Label Style="{StaticResource NormalLabel}" VerticalOptions="Center" Grid.Row="1" Grid.Column="0" Text="Standaard"></Label>
-                        <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="1" Grid.Column="1" Text="{Binding CarData.ScrapedCarData.HorsePower}"></Label>
+                        <Label Style="{StaticResource ValueLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="1" Grid.Column="1" Text="{Binding CarData.ScrapedCarData.HorsePower}"></Label>
                         <Label Style="{StaticResource NormalLabel}" VerticalOptions="Center" Grid.Row="2" Grid.Column="0" Text="Na tuning"></Label>
-                        <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="2" Grid.Column="1" Text="{Binding TuningResult.HorsePowerAfterTuningAsString}"></Label>
+                        <Label Style="{StaticResource ValueLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="2" Grid.Column="1" Text="{Binding TuningResult.HorsePowerAfterTuningAsString}"></Label>
                         <Label Style="{StaticResource NormalLabel}" VerticalOptions="Center" Grid.Row="3" Grid.Column="0" Text="Verschil"></Label>
-                        <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="3" Grid.Column="1" Text="{Binding TuningResult.HorsePowerDifferenceAsString}"></Label>
-                        <BoxView Grid.RowSpan="3" Grid.Row="1" Grid.Column="2" BackgroundColor="Blue"></BoxView>
+                        <Label Style="{StaticResource ValueLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="3" Grid.Column="1" Text="{Binding TuningResult.HorsePowerDifferenceAsString}"></Label>
                     </Grid>
                 </Border>
                 <Border Grid.Row="1" BackgroundColor="#7da0fa" StrokeThickness="0">
@@ -72,16 +80,28 @@
                     <Grid RowDefinitions="*, *, *, *" ColumnDefinitions="*, *, 2*" Padding="15">
                         <Label Grid.Row="0" Grid.Column="0" Style="{StaticResource TitleLabel}" Text="Koppel"></Label>
                         <Label Style="{StaticResource NormalLabel}" VerticalOptions="Center" Grid.Row="1" Grid.Column="0" Text="Standaard"></Label>
-                        <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="1" Grid.Column="1" Text="{Binding CarData.ScrapedCarData.Torque}"></Label>
+                        <Label Style="{StaticResource ValueLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="1" Grid.Column="1" Text="{Binding CarData.ScrapedCarData.Torque}"></Label>
                         <Label Style="{StaticResource NormalLabel}" VerticalOptions="Center" Grid.Row="2" Grid.Column="0" Text="Na tuning"></Label>
-                        <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="2" Grid.Column="1" Text="{Binding TuningResult.TorqueAfterTuningAsString}"></Label>
+                        <Label Style="{StaticResource ValueLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="2" Grid.Column="1" Text="{Binding TuningResult.TorqueAfterTuningAsString}"></Label>
                         <Label Style="{StaticResource NormalLabel}" VerticalOptions="Center" Grid.Row="3" Grid.Column="0" Text="Verschil"></Label>
-                        <Label Style="{StaticResource NormalLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="3" Grid.Column="1" Text="{Binding TuningResult.TorqueDifferenceAsString}"></Label>
-                        <BoxView Grid.RowSpan="3" Grid.Row="1" Grid.Column="2" BackgroundColor="Blue"></BoxView>
+                        <Label Style="{StaticResource ValueLabel}" FontSize="15" VerticalOptions="Center" Grid.Row="3" Grid.Column="1" Text="{Binding TuningResult.TorqueDifferenceAsString}"></Label>
                     </Grid>
                 </Border>
             </Grid>
-            <Label HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="2" Text="{Binding Plate}" />
+            <Grid Grid.Row="0" Grid.Column="2" RowDefinitions="*, *" RowSpacing="25">
+                <Border Grid.Row="0">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="10" />
+                    </Border.StrokeShape>
+                    <chart:ChartView Chart="{Binding HorsePowerChart}"></chart:ChartView>
+                </Border>
+                <Border Grid.Row="1">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="10" />
+                    </Border.StrokeShape>
+                    <chart:ChartView Chart="{Binding TorqueChart}"></chart:ChartView>
+                </Border>
+            </Grid>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

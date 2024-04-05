@@ -48,7 +48,7 @@ public class ApiService : IApiService
     }
     
     /// <summary>
-    /// Queries 500000 in parallel
+    /// Queries 50000 in parallel
     /// </summary>
     /// <returns></returns>
     public async Task<List<CarData>> QueryAllRdwDataInParallel()
@@ -57,8 +57,8 @@ public class ApiService : IApiService
         var cars = new List<CarData>();
         var tasks = new List<Task<List<CarData>>>();
         
-        // Fetch 500000 records from rdw
-        for (var x = 0; x < 500000; x += 1000)
+        // Fetch 50000 records from rdw
+        for (var x = 0; x < 50000; x += 1000)
         {
             tasks.Add(GetRdwDataAsync(x));
         }

@@ -68,10 +68,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Data\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <Compile Update="Page\CarPerformance.xaml.cs">
         <DependentUpon>CarPerformance.xaml</DependentUpon>
       </Compile>

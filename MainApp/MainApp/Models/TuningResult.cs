@@ -4,17 +4,17 @@ namespace MainApp.Models;
 
 public class TuningResult
 {
-    public double HorsePowerBeforeTuning { get; set; }
-    public double TorqueBeforeTuning { get; set; }
-    public double HorsePowerAfterTuning { get; set; }
-    public double TorqueAfterTuning { get; set; }
+    public double HorsePowerBeforeTuning { get; private set; }
+    public double TorqueBeforeTuning { get; private set; }
+    public double HorsePowerAfterTuning { get; private set; }
+    public double TorqueAfterTuning { get; private set; }
     
-    public string HorsePowerDifferenceAsString { get; private set; }
-    public string TorqueDifferenceAsString { get; private set; }
+    public string? HorsePowerDifferenceAsString { get; private set; }
+    public string? TorqueDifferenceAsString { get; private set; }
 
-    public string HorsePowerAfterTuningAsString { get; private set; }
+    public string? HorsePowerAfterTuningAsString { get; private set; }
 
-    public string TorqueAfterTuningAsString { get; private set; }
+    public string? TorqueAfterTuningAsString { get; private set; }
     
     public TuningResult(string horsePower, string torque)
     {

@@ -18,6 +18,7 @@ public partial class TuningViewModel : ObservableObject, IQueryAttributable
     [ObservableProperty] private TuningResult? _tuningResult;
     [ObservableProperty] private Chart _horsePowerChart;
     [ObservableProperty] private Chart _torqueChart;
+    [ObservableProperty] private bool _isLoading;
     private readonly IApiService _apiService = new ApiService();
     private readonly CarSpecsWebScraper _webScraper = new();
 
@@ -124,19 +125,16 @@ public partial class TuningViewModel : ObservableObject, IQueryAttributable
     [RelayCommand]
     private async Task ExportData()
     {
-        await FetchAllCarData();
+        IsLoading = true;
+        await SaveCarDataToFileAsync();
     }
-
-    private async Task FetchAllCarData()
-    {
-        var data = await _apiService.QueryAllRdwData();
-        await SaveCarDataToFileAsync(data);
-    }
-
-    private Task SaveCarDataToFileAsync(IEnumerable<CarData> carData)
+    
+    private Task SaveCarDataToFileAsync()
     {
         var saveThread = new Thread(async () =>
         {
+            var carData = await _apiService.QueryAllRdwData();
+            IsLoading = false;
             using (var memoryStream = new MemoryStream())
             {
                 var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
@@ -159,7 +157,6 @@ public partial class TuningViewModel : ObservableObject, IQueryAttributable
         });
         saveThread.Start();
         saveThread.Join();
-        
         return Task.CompletedTask;
     }
 }

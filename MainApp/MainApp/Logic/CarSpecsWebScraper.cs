@@ -23,8 +23,7 @@ public class CarSpecsWebScraper
                 if (childNode is not { Name: "div" }) continue;
                 if (!childNode.HasClass("label")) continue;
                 var labelText = childNode.InnerText.Replace("\n", "").Trim();
-
-                // Get the next sibling div (assuming it's the value)
+                
                 var nextSibling = childNode.NextSibling;
                 while (nextSibling != null)
                 {
@@ -33,7 +32,7 @@ public class CarSpecsWebScraper
                     {
                         var valueText = nextSibling.InnerText.Replace("\n", "").Trim();
                         data.TryAdd(labelText, valueText);
-                        break; // Exit the loop once value div is found
+                        break;
                     }
 
                     nextSibling = nextSibling.NextSibling;

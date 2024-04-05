@@ -13,9 +13,9 @@
                 <Entry x:Name="cta_subForm" Text="{Binding Plate}" MaxLength="8" BackgroundColor="#f0b504" HorizontalTextAlignment="Center" TextTransform="Uppercase" TextColor="Black" FontSize="22" FontAttributes="Bold" MinimumWidthRequest="200"/>
                 <Button Text="Bereken" Command="{Binding SubmitCommand }" FontSize="14" CommandParameter="{Binding Source={x:Reference cta_subForm}, Path=Text}"/>
         </HorizontalStackLayout>
-        
-
-        <Button VerticalOptions="Center" HorizontalOptions="Center" Text="Export All Data" Command="{Binding ExportDataCommand }" FontSize="14"/>
+        <HorizontalStackLayout>
+            <Button VerticalOptions="Center" HorizontalOptions="Center" Text="Export All Data" Command="{Binding ExportDataCommand }" FontSize="14"/>
+            <ActivityIndicator Color="RoyalBlue" IsRunning="{Binding IsLoading}"></ActivityIndicator>
+        </HorizontalStackLayout>
     </FlexLayout>
-    
 </ContentPage>
